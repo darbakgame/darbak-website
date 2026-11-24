@@ -76,7 +76,7 @@ a{color:#F2B544}a:hover{color:#FFD27A}
 </table>
 </div>
 <p style="margin: 0">We get this data in three ways: what you enter when you create an account, what is recorded automatically while you play, buy or watch ads, and what the game saves on your device.</p>
-<p style="margin: 0">We do not collect your precise location (GPS), contacts or photos, and the game has no chat or private messages. We do not use a third-party crash reporting tool; Apple may share crash reports with us only if you allow it in your iPhone settings.</p>
+<p style="margin: 0">We do not collect your precise location (GPS), contacts or photos, and the game has no chat or private messages. The advertising SDK may process crash and diagnostic data as described in the ads section. Apple may also share crash reports according to your device settings.</p>
 </section>
 <section id="public" style="display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 24px">
 <h3 style="margin: 0; font-family: Cairo, sans-serif; font-size: 26px; color: #F4F1E8">What other players see</h3>
@@ -109,10 +109,7 @@ a{color:#F2B544}a:hover{color:#FFD27A}
 <p style="margin: 0">Your data may be stored or processed by our providers in countries other than yours. [PlayFab and Supabase server regions — to be set by the owner]</p>
 </section>
 <section id="ads" style="display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 24px">
-<h3 style="margin: 0; font-family: Cairo, sans-serif; font-size: 26px; color: #F4F1E8">Ads and consent</h3>
-<p style="margin: 0">Testing builds may include rewarded-ad components. Whether AdMob is active in the public build and which consent flows actually operate must be confirmed before publishing a final policy.</p>
-<p style="margin: 0; padding: 16px 20px; border-radius: 12px; background: #2A2213; border: 1px solid #5A4520; color: #F1DDB3">[To be completed after confirming the live AdMob settings: whether ads are personalized, whether the advertising identifier (IDFA) is used, and whether the App Tracking Transparency (ATT) prompt appears]</p>
-</section>
+<h3 style="margin: 0; font-family: Cairo, sans-serif; font-size: 26px; color: #F4F1E8">Ads and consent</h3><p>DARBAK uses Google AdMob to show rewarded ads when available and enabled for the game version and advertising service. Players choose to watch an ad for the offered benefit, and rewards are granted after server-side verification.</p><p>The advertising service may process IP addresses and approximate location inferred from them, available device or app identifiers, device, performance and crash data, and ad impressions and interactions to deliver and measure ads and prevent fraud. Reward verification sends Google verification data including a user identifier and reward-request data. The game service records display, closure and reward events.</p><p>The game uses Google UMP to update consent information and display privacy messages when required. It requests ads only when UMP permits requests. You can review your choices using the in-game “Ad privacy options” button when available. Ad eligibility and type depend on consent, configuration and region. The absence of a consent prompt in your region does not mean no data is processed.</p><p>The current iOS integration does not directly request ATT tracking permission. This does not mean the advertising service processes no other identifiers or technical data. See <a href="https://policies.google.com/technologies/ads">Google’s advertising policy</a> and <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>. Opening an ad or visiting an advertiser’s site is also subject to the receiving party’s policy.</p></section>
 <section id="security" style="display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 24px">
 <h3 style="margin: 0; font-family: Cairo, sans-serif; font-size: 26px; color: #F4F1E8">Data security</h3>
 <p style="margin: 0">Data travels between the game and our servers over an encrypted connection (HTTPS), and we take reasonable measures to protect it, but no system is completely secure.</p>
